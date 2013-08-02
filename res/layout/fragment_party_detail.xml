@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="#FFFFFF" >
+  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:orientation="vertical">
+                
+    <TextView
+    	android:id="@+id/party_title"
+    	style="?android:attr/textAppearanceLarge"
+    	android:textStyle="bold"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="16dp"
+    	android:textIsSelectable="true"
+    	
+    />
+
+	<TextView
+    	android:id="@+id/party_description"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textColor="#8D8D8D"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="20dp"
+    	android:textIsSelectable="true"
+    />
+    
+    	<TableLayout
+        	android:id="@+id/rsvp_list"
+        	android:layout_height="fill_parent"
+        	android:layout_width="fill_parent"
+        	android:stretchColumns="1"
+        	android:shrinkColumns="1"
+        	android:padding="16dp" />
+	
+	
+    <TextView
+    	android:id="@+id/login_for_rsvp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textColor="#333355"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="16dp"
+    	android:text="@string/login_for_rsvp"
+    	android:textIsSelectable="false"
+    />
+    <TextView
+    	android:id="@+id/label_my_rsvp"
+    	style="?android:attr/textAppearanceMedium"
+    	android:textColor="#333355"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="16dp"
+    	android:text="@string/label_rsvp"
+    	android:textIsSelectable="false"
+    />
+
+    <RadioGroup
+        android:id="@+id/rsvp_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <ToggleButton
+            android:id="@+id/rsvp_yes"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green"
+            android:textOn="@string/rsvp_yes"
+            android:textOff="@string/rsvp_yes"
+        />
+
+        <ToggleButton
+            android:id="@+id/rsvp_maybe"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_blue"
+            android:textOn="@string/rsvp_maybe"
+            android:textOff="@string/rsvp_maybe"
+        />
+
+        <ToggleButton
+            android:id="@+id/rsvp_no"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_red"
+            android:textOn="@string/rsvp_no"
+            android:textOff="@string/rsvp_no"
+        />
+    </RadioGroup>
+   
+  </LinearLayout>
+</ScrollView>
+
+ 

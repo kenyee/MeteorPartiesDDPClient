@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.keysolutions.meteorparties"
+    android:versionCode="3"
+    android:versionName="0.8.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+        
+    <supports-screens
+    	android:largeScreens="true"
+    	android:xlargeScreens="true" />
+
+    <permission
+        android:name="com.keysolutions.meteorparties.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.keysolutions.meteorparties.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name="MyApplication">
+        
+        <activity
+            android:name="com.keysolutions.meteorparties.PartyMapActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.keysolutions.meteorparties.LoginActivity"
+            android:label="@string/title_login"
+            android:parentActivityName="com.keysolutions.meteorparties.PartyMapActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.keysolutions.meteorparties.PartyDetailActivity"
+            android:label="@string/title_party_detail"
+            android:parentActivityName="com.keysolutions.meteorparties.PartyMapActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PartyMapActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/maps_api_key" />
+    </application>
+
+</manifest>

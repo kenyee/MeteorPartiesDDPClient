@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="false">
+    
+    <TextView
+        android:id="@+id/user"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header_rsvp_user"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/rsvp"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="@string/header_rsvp_rsvp"
+        android:textStyle="bold" >
+    </TextView>
+
+</TableRow>

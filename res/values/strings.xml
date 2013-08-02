@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Meteor Parties Demo</string>
+    <string name="title_party_detail">Party Detail</string>
+    <string name="title_login">Login</string>
+    <string name="header_rsvp_user">Who</string>
+    <string name="header_rsvp_rsvp">RSVP</string>
+    <string name="label_rsvp">Your RSVP: </string>
+    <string name="rsvp_yes">I\'m Going!</string>
+    <string name="rsvp_maybe">Maybe</string>
+    <string name="rsvp_no">No</string>
+    <string name="login_for_rsvp">Please Login to RSVP</string>
+
+</resources>

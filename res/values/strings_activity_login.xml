@@ -1,0 +1,21 @@
+<resources>
+    
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+
+    <string name="action_register">Register</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_forgot_password">Forgot Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    
+    <string name="dlg_title_password_sent">Password Reset</string>
+    <string name="dlg_password_sent">Password reset link sent to your email</string>
+</resources>

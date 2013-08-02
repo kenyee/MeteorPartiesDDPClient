@@ -1,0 +1,13 @@
+<resources>
+
+    <!--
+    Layout alias to replace the single-pane version of the layout with a
+    two-pane version on Large screens.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    <item name="activity_party_list" type="layout">@layout/activity_party_twopane</item>
+    <item name="activity_party_map" type="layout">@layout/activity_party_twopane</item>
+    
+</resources>
